@@ -1,0 +1,20 @@
+<h1>Blogista</h1>
+<h4>A short hands on blogging platform for young journalists!</h4>
+<h6>By Shivansh Gupta</h6>
+<a href="https://github.com/ShivanshGupta1" target="_blank">My Github</a><br/>
+
+<hr>
+<h6>    </h6>
+<h6>    </h6>
+<h6>    </h6>
+
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Create A New Blog", new_article_path %>

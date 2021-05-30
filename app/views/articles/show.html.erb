@@ -1,0 +1,12 @@
+<h1><%= @article.title %></h1>
+
+<p><%= @article.body %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_article_path(@article) %></li>
+  <li><%= link_to "Destroy", article_path(@article),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></li>
+</ul>
+<h1>  </h1>
+<a href="http://localhost:3000" target="_blank">See All Articles</a><br/>
